@@ -15,9 +15,6 @@ npm link
 ```bash
 html-metadata-to-csv
 ```
-## Output
-| -- | -- |
-
 
 # Option
 ```
