@@ -1,0 +1,19 @@
+{
+  "name": "html-metadata-to-csv",
+  "version": "0.0.1",
+  "description": "Create a CSV file by retrieving meta information from the html file of a static site in the local environment.",
+  "bin": {
+    "html-metadata-to-csv": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^7.0.0",
+    "jconv": "^0.1.5",
+    "jsdom": "^16.4.0",
+    "json2csv": "^5.0.5"
+  }
+}
