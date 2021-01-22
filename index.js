@@ -2,7 +2,6 @@
 const fs = require('fs');
 const { JSDOM } = require('jsdom');
 const {Parser, transforms: {unwind}} = require('json2csv');
-const jconv = require('jconv');
 const program = require('commander');
 
 const searchFiles = (targetDir, fileList, extentions) => {
@@ -70,7 +69,7 @@ function getCsv(data, fields, pathes) {
   })];
   const json2csvParser = new Parser({fields, transforms, withBOM: true});
   const csv = data.length ? json2csvParser.parse(data) : '';
-  return (jconv.convert(csv, 'UTF8', 'SJIS'));
+  return csv;
 }
 
 program

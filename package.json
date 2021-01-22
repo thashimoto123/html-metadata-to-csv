@@ -12,7 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^7.0.0",
-    "jconv": "^0.1.5",
     "jsdom": "^16.4.0",
     "json2csv": "^5.0.5"
   }
